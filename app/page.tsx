@@ -1,63 +1,56 @@
-import { Inter, Caveat } from "next/font/google"
+import { Inter } from "next/font/google"
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500"],
-})
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-})
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
-    <div
-      className={`min-h-screen bg-gradient-to-br from-pink-50 via-white to-purple-50 flex items-center justify-center p-6 ${inter.className}`}
-    >
-      <div className="max-w-2xl mx-auto text-center space-y-10">
-        {/* Decorative elements */}
-        <div className="flex justify-center space-x-4 text-2xl opacity-60">
-          <span>🌸</span>
-          <span>💕</span>
-          <span>🌸</span>
+    <div className={`min-h-[60vh] flex flex-col items-start justify-center py-12 ${inter.className}`}>
+      <section id="about" className="w-full">
+        <h2 className="text-3xl font-semibold">Hi, I'm Meff</h2>
+        <p className="mt-3 text-slate-700 max-w-2xl">
+          I'm an app developer focused on building native experiences using Expo and React Native. I ship small,
+          thoughtful mobile apps and prototypes that solve real user problems.
+        </p>
+      </section>
+
+      <section id="projects" className="w-full mt-8">
+        <h3 className="text-2xl font-medium">Selected Projects</h3>
+        <ul className="mt-4 space-y-3">
+          <li className="p-4 bg-white border rounded-md shadow-sm">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="font-semibold">Project One</div>
+                <div className="text-sm text-slate-600">A small Expo app for tracking habits.</div>
+              </div>
+              <a className="text-sm text-sky-600 hover:underline" href="#">Live</a>
+            </div>
+          </li>
+          <li className="p-4 bg-white border rounded-md shadow-sm">
+            <div className="flex items-center justify-between">
+              <div>
+                <div className="font-semibold">Project Two</div>
+                <div className="text-sm text-slate-600">Prototype for a social-native feature using React Native.</div>
+              </div>
+              <a className="text-sm text-sky-600 hover:underline" href="#">Repo</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills" className="w-full mt-8">
+        <h3 className="text-2xl font-medium">Skills</h3>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <span className="px-3 py-1 bg-slate-100 text-sm rounded">React Native</span>
+          <span className="px-3 py-1 bg-slate-100 text-sm rounded">Expo</span>
+          <span className="px-3 py-1 bg-slate-100 text-sm rounded">TypeScript</span>
+          <span className="px-3 py-1 bg-slate-100 text-sm rounded">Tailwind CSS</span>
         </div>
+      </section>
 
-        <h1 className={`text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-800 ${caveat.className}`}>
-          Happy Birthday, Love!
-        </h1>
-
-        <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 shadow-sm border border-pink-100">
-          <div className="space-y-6 text-base md:text-lg leading-relaxed text-gray-700 font-light">
-            <p>
-              This year, I wanted to gift you something special ... a little digital corner of your own. This website
-              and domain belong entirely to you; a place where you can freely express yourself, showcase your adorable
-              apps, and let your creativity shine.
-            </p>
-
-            <p>
-              I hope this becomes a space as beautiful, inspiring, and unique as you are. Fill it with your dreams, your
-              stories, and all the wonderful things that make you, you.
-            </p>
-
-            <p>I'm always here cheering you on, and I can't wait to see all the amazing things you'll create.</p>
-          </div>
-        </div>
-
-        <div className="pt-6">
-          <p className="text-lg md:text-xl text-gray-600 font-light">With all my love,</p>
-          <p className={`text-2xl md:text-3xl font-medium mt-2 text-pink-600 ${caveat.className}`}>Snuggles</p>
-        </div>
-
-        {/* Bottom decorative elements */}
-        <div className="flex justify-center space-x-6 text-xl opacity-50 pt-4">
-          <span>✨</span>
-          <span>🎂</span>
-          <span>🎈</span>
-          <span>🎁</span>
-          <span>✨</span>
-        </div>
-      </div>
+      <section id="contact" className="w-full mt-8">
+        <h3 className="text-2xl font-medium">Contact</h3>
+        <p className="mt-3 text-slate-700">Interested in working together? Reach out at <a className="text-sky-600 hover:underline" href="mailto:meff@example.com">meff@example.com</a>.</p>
+      </section>
     </div>
   )
 }
