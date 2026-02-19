@@ -19,9 +19,10 @@ bun install
 bun run dev
 ```
 
-Open http://localhost:3000 in your browser.
+
 
 ## Notes
 
 - Replace email `meff@example.com` in `app/page.tsx` with a real contact address.
 - Update project links and content under `app/page.tsx` to showcase real projects.
+
