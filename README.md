@@ -1,28 +1,39 @@
-# Meff — Portfolio
+# Hi there, I'm Meff 👋
 
-This is a minimal portfolio site for Meff, an app developer who builds mobile apps using Expo and React Native. The site is built with Next.js and Tailwind CSS and intentionally kept simple and minimal.
+Welcome to my GitHub profile! I'm a passionate app developer specializing in mobile application development with a focus on creating intuitive, performant experiences.
 
-## What you'll find
+## 🚀 About Me
 
-- A concise homepage with About, Projects, Skills, and Contact sections.
-- Minimal styles in `app/globals.css`.
+I'm an app developer who transforms ideas into functional, user-centric mobile applications. With expertise in modern frameworks and a minimalist approach to code and design, I build apps that work seamlessly across platforms.
 
-## Run locally (WSL)
+- 💻 **Specialization**: Mobile App Development
+- 🛠️ **Tech Stack**: React Native, Expo, Convex
+- 🎨 **Approach**: Minimal, clean, cute and user-focused design
+- 📱 **Focus**: Cross-platform mobile applications
 
-Install dependencies with Bun and run the dev server:
+## 🛠️ Tech Stack
 
-```bash
-# install dependencies and create `bun.lockb`
-bun install
-
-# run the dev server (same scripts in `package.json` — Bun runs them with `bun run`)
-bun run dev
-```
-
+### Mobile Development
+- **React Native** - Building native apps for iOS and Android
+- **Expo** - Streamlined development and deployment
+- **JavaScript/TypeScript** - Core development language
 
 
-## Notes
+### Tools & Platforms
+- **Bun** - Fast JavaScript runtime
+- **Git** - Version control
 
-- Replace email `meff@example.com` in `app/page.tsx` with a real contact address.
-- Update project links and content under `app/page.tsx` to showcase real projects.
+## 📊 Projects
 
+I showcase my best work on my [portfolio site](https://github.com/mjdodiya). Check out my repositories to see:
+- Mobile applications built with React Native and Expo
+- Full-stack web projects
+- Open-source contributions
+
+## 🤝 Let's Connect
+
+I'm always interested in collaborating on exciting projects or discussing mobile app development strategies.
+
+---
+
+*Feel free to explore my repositories, open an issue, or reach out if you'd like to collaborate!*
